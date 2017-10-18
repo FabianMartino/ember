@@ -1,0 +1,10 @@
+<h5>BOOKMARKS</h5>
+
+<ul>
+{{#each model as |m|}}
+<li>Image Title: {{m}} <button type="button" {{action "removeB" m}} name="button">Remove bookmark</button></li>
+
+{{/each}}
+</ul>
+
+{{outlet}}

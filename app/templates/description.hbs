@@ -1,0 +1,11 @@
+<br>
+<h4>Descripciones insertadas a mano:</h4>
+<ul>
+
+{{#each model as |m|}}
+<li>{{m.url}}, {{m.title}}, {{m.image}}</li>
+{{#link-to 'itemdescription' m}} link to item description {{/link-to}}
+{{/each}}
+</ul>
+
+{{outlet}}

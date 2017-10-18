@@ -1,0 +1,15 @@
+<br>
+{{#link-to 'bookmarks'}} link to bookmarks {{/link-to}}
+<ul>
+  {{#each model.collection.items as |m|}}
+  <li> {{m.data.firstObject.title}}</li>
+    <li><img src="{{m.links.firstObject.href}}" alt=""></li>
+    <button type="button" {{action "addBookmark" m.data.firstObject.title}} name="button">ADD TO BOOKMARK</button>
+    {{#link-to 'image' image_id}} link to this image {{/link-to}}
+
+    {{/each}}
+</ul>
+
+  <!-- {{image-item name=m.name description=m.description}} -->
+
+{{outlet}}

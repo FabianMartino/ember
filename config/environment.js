@@ -1,4 +1,5 @@
 /* eslint-env node */
+//ember-data provee una interfaz comun para guardar dato y abstraer datos de una apiKey
 'use strict';
 
 module.exports = function(environment) {
@@ -7,6 +8,12 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase: {
+      apiKey: "AIzaSyB52A_jm_Cve4gWPU9gdvfnRNi-At_nYYs",
+      authDomain: "nasaember.firebaseapp.com",
+      databaseURL: "https://nasaember.firebaseio.com",
+      storageBucket: "nasaember.appspot.com",
+  },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
